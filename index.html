@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Buddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>📚 Study Buddy</h1>
+    <p>Keep your schoolwork organized.</p>
+  </header>
+
+  <main>
+    <section class="add-section">
+      <h2>Add an Assignment</h2>
+
+      <input type="text" id="assignmentName" placeholder="Assignment name">
+      <input type="text" id="className" placeholder="Class">
+      <input type="date" id="dueDate">
+
+      <button onclick="addAssignment()">Add Assignment</button>
+    </section>
+
+    <section>
+      <h2>My Assignments</h2>
+
+      <p id="emptyMessage">No assignments yet. Add one above!</p>
+
+      <div id="assignmentList"></div>
+    </section>
+
+    <section class="progress">
+      <h2>Progress</h2>
+      <p>Completed: <span id="completedCount">0</span></p>
+      <p>Total: <span id="totalCount">0</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
